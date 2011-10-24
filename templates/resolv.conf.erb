@@ -1,0 +1,9 @@
+#
+# Fichier genere par puppet
+#
+
+search <% search_domains.each do |domain| %><%= domain %> <% end -%>
+
+<% dns_servers.each do |server| %>
+nameserver <%= server %>
+<% end -%>
